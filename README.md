@@ -9,3 +9,5 @@ It also optionally saves the generated docs to a volume mount.
 ```
 docker-compose up -d
 ```
+
+You can also set the `STDLIB_VERSION` and `AIKEN_VERSION` variables to override the default versions in the `docker-compose.yml` file.
