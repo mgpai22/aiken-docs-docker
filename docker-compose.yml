@@ -1,0 +1,13 @@
+services:
+  aiken-docs:
+    build:
+      context: .
+      args:
+        AIKEN_VERSION: 1.1.5
+        STDLIB_VERSION: 1.9.0
+    ports:
+      - "8000:8000"
+    container_name: aiken_docs_server
+    restart: unless-stopped
+    volumes:
+      - ./docs:/app/stdlib/docs

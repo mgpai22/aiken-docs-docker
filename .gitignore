@@ -1,0 +1,5 @@
+# Ignore all files in the docs directory
+/docs/*
+
+# Except for the .gitkeep file
+!/docs/.gitkeep
